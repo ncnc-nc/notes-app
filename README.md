@@ -1,62 +1,56 @@
-# Notes App 
+# Notes Application (MERN-style with Vanilla JS)
 
-A full-stack web application built with **React, Node.js, Express, and MongoDB** that allows users to register, log in, and manage notes with features like pinning and favoriting.
+A simple **Notes Application** with **User Authentication** where users can **Register, Login, Add, Edit, Pin, and Delete notes** securely using **JWT authentication**.
 
 ## Features
-- User authentication (Register/Login with JWT)
-- Create, Read, Update, Delete (CRUD) notes
-- Pin/unpin notes 
-- Mark/unmark notes as favorite 
-- Protected routes with conditional rendering
-- Modern card-based UI with responsive design
+
+- User Registration & Login
+- JWT-based Authentication
+- Add Notes
+- Edit Notes
+- Pin / Unpin Notes
+- Delete Notes
+- Protected Routes
+- Clean & Responsive UI
+- Persistent Login using LocalStorage
 
 ---
 
 ## Tech Stack
-- **Frontend**: React, React Router, Axios, CSS
-- **Backend**: Node.js, Express.js
-- **Database**: MongoDB (Mongoose ODM)
-- **Authentication**: JWT + bcrypt
 
----
+### Frontend
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Token (JWT)
 
 ##  Project Structure
 notes-app/
+│
 ├── backend/
-│   ├── config/
-│   │   └── db.js             
-│   ├── controllers/
-│   │   ├── userController.js  
-│   │   └── noteController.js 
-│   ├── middleware/
-│   │   └── authMiddleware.js  
 │   ├── models/
-│   │   ├── User.js           
-│   │   └── Note.js           
+│   │   ├── User.js
+│   │   └── Note.js
 │   ├── routes/
-│   │   ├── userRoutes.js      
-│   │   └── noteRoutes.js      
-│   ├── server.js              
-│   └── package.json           
+│   │   ├── auth.js
+│   │   └── notes.js
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   ├── server.js
+│   └── package.json
 │
-├── frontend/
-│   ├── public/
-│   │   └── index.html         
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Navbar.js       
-│   │   │   ├── Register.js    
-│   │   │   ├── Login.js       
-│   │   │   ├── NotesList.js   
-│   │   │   ├── NoteItem.js    
-│   │   │   └── NoteForm.js    
-│   │   ├── services/
-│   │   │   └── api.js         
-│   │   ├── App.js            
-│   │   ├── App.css            
-│   │   └── index.js           
-│   └── package.json          
+└── frontend/
+|    ├── login.html
+|    ├── register.html
+|    ├── notes.html
+|    ├── style.css
+|   └── script.js
+|
 │
-├── .env                       
-├── README.md                  
-└── package.json               
+└── README.md
